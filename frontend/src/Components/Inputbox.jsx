@@ -33,7 +33,7 @@ export default function Inputbox() {
     }
 
     return <>
-        <div className="flex justify-center items-center h-70  gap-6 flex-col">
+        <div className="flex justify-center items-center h-60 gap-4 flex-col">
 
             <div className="flex justify-center items-center flex-col">
                 <h1 className="text-2xl font-serif">Download Instagram reel free <span className="text-blue-600">Lifetime</span> </h1>
