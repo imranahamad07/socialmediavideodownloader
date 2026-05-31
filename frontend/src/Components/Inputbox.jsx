@@ -75,8 +75,8 @@ export default function Inputbox() {
 
         <div className="w-full h-auto flex justify-center items-center">
             {reel ? (
-                <div className="w-[80vw] lg:w-[20vw] flex flex-col justify-center gap-2 items-center md:w-[20vw]  h-[70vh] ">
-                    <video className="w-full h-[60vh]" src={reel} controls ></video>
+                <div className="w-[80vw] lg:w-[20vw] flex flex-col justify-center gap-2 items-center md:w-[20vw]  h-[60vh] ">
+                    <video className="w-full h-full" src={reel} controls ></video>
                 </div>
             ) : loading ? (
                 <div className="animate-pulse">
