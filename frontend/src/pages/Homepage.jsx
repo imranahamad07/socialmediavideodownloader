@@ -7,7 +7,6 @@ export default function Homepage() {
         document.title = "instagram reel downloader | Homepage"
     })
     return <>
-        <Navbar />
         <Inputbox />
     </>
 }
