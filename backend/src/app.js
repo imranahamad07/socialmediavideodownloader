@@ -7,9 +7,11 @@ export const app = express();
 app.use(express.json({limit:'10mb'}));
 app.use(cors({
     origin: [
-        "https://socialmediavideodownloader-ashen.vercel.app/",
+        "https://socialmediavideodownloader-ashen.vercel.app",
         "http://localhost:5173"
-    ]
+    ],
+    methods: ['GET', 'POST'],
+    credentials: true
 }));
 
 app.use('/api',downloadRoutes);
