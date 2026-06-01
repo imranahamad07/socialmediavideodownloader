@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Inputbox from "../Components/Inputbox";
+import Sharing from "../Components/Sharing";
 
 export default function Homepage() {
     useEffect(() => {
@@ -26,5 +27,7 @@ export default function Homepage() {
                 <p><span className="font-semibold">No Watermark :</span> <span className="font-serif text-gray-800">Get a clean, unbranded video file.</span></p>
             </div>
         </div>
+
+        <Sharing/>
     </>
 }
