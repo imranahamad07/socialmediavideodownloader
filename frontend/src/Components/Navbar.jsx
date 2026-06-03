@@ -21,6 +21,7 @@ export default function Navbar() {
             </div>
 
             <div className="flex justify-center items-center gap-3 p-2">
+                <p>Follow me on </p>
                 <p className="cursor-pointer" onClick={() => window.location.href = "https://www.instagram.com/im33an_/"}><i className="ri-instagram-line"></i></p>
                 <p className="cursor-pointer" onClick={() => window.location.href = "mailto:imran3111ahamd@gmai.com"}><i className="ri-mail-line"></i></p>
             </div>
