@@ -58,6 +58,7 @@ export default function Inputbox() {
                     className={`bg-blue-800 text-white h-11 cursor-pointer rounded px-4`}
                     type="button"
                     disabled={loading}
+                    aria-label="Paste from clipboard"
                 >
                     <i className="ri-clipboard-line"></i>
                 </button>
@@ -76,7 +77,15 @@ export default function Inputbox() {
         <div className="w-full h-auto flex justify-center items-center">
             {reel ? (
                 <div className="w-[80vw] lg:w-[20vw] flex flex-col justify-center gap-2 items-center md:w-[20vw]  h-[60vh] ">
-                    <video className="w-full h-full" src={reel} controls ></video>
+                    <video className="w-full h-full" src={reel} controls >
+                        <track 
+                            kind="captions"
+                            label="English"
+                            srcLang="en"
+                            default
+                            
+                        />
+                    </video>
                 </div>
             ) : loading ? (
                 <div className="animate-pulse">
